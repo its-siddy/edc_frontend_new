@@ -42,6 +42,36 @@
 
     <!-- Carousel  Deoendencies -->
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"id="bootstrap-css"/> 
+    <link rel="shortcut icon" type="image/png" href="C:\Users\lenovo\OneDrive\Desktop/edcacro.png"/>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
+    <!-- scrolltrigger -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/index.css">
+    <!-- wow -->
+    <link rel="stylesheet" type="text/css" href="assets/animate.css">
+    
+    <!-- <script src="assets/skroller.js"></script> -->
+    <!-- font -->
+      <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+      <!-- fontawesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
     
     <!-- =======================================================
   * Template Name: Vesperr - v4.7.0
@@ -1249,181 +1279,133 @@
 
       <!-- ======= Contact Section ======= -->
       <section id="contact" class="contact">
-       
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="We're defining brands on social media">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="John Doe">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EDC ACROPOLIS-Contact</title>
-      <link rel="shortcut icon" type="image/png" href="C:\Users\lenovo\OneDrive\Desktop/edcacro.png"/>
-  <!-- Latest compiled and minified CSS -->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
-  <!-- jQuery library -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-  <!-- Popper JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-
-  <!-- Latest compiled JavaScript -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- gsap -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"></script>
-  <!-- scrolltrigger -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/ScrollTrigger.min.js"></script>
-  <!-- CSS -->
-  <link rel="stylesheet" href="assets/index.css">
-  <!-- wow -->
-  <link rel="stylesheet" type="text/css" href="assets/animate.css">
-  
-  <!-- <script src="assets/skroller.js"></script> -->
-  <!-- font -->
-    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap" rel="stylesheet">
-    <!-- fontawesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-          <style>
-          
-          * {
-              box-shadow: 0 0 0 transparent;
-
-          }
-
-           
-          </style>
-             
-</head>
-<body>
-    
-          <div class="container-fluid py-3">
-            <div class="row">
-                <div class="col-md-12">
-                            </div>
-            </div>
+        <div class="contact-form">
+          <div class="first-container">
+           <div class="info-container">
+             <div> 
+               <h3>Address</h3>
+               <p>H-block, Street no-17, New Delhi- 110001, India</p>
+             </div>
+             <div> 
+               <h3>Lets Talk</h3>
+               <p>+1 800 1236879</p>
+             </div>
+             <div> 
+               <h3>General Support</h3>
+               <p>contact@example.com</p>
+             </div>
+           </div>
+          </div>
+          <div class="second-container">
+            <h2>Send Us A Message</h2>
+            <form action="https://formsubmit.co/connect@creativefuel.io" method="POST" accept-charset="utf-8">
+               <input type="hidden" name="_captcha" value="false">
+                 <input type="hidden" name="_template" value="table">
+               <input type="hidden" name="_next" value="https://creativefuel.io/thankyou.html">
+   
+             <div class="row py-4">
+               <div class="col-md-6">
+                 <div class="form-group">
+                     <input type="text" name="name" id="name" required placeholder="Full Name" class="form-control">
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                       <select name="type" id="type" class="form-control" style="background-color:white" onchange="company_field(this.value)">
+                           <option value="ACROPOLIAN">ACROPOLIAN</option>
+                           <option value="NON-ACROPOLIAN">NON-ACROPOLIAN</option>
+                       </select>
+   
+                   </div>
+               </div>
+             </div>
+   
+               <script>
+                   function company_field(val){
+                       
+   
+                    if(val==="NON-ACROPOLIAN"){
+                                                            
+                        
+                 
+                             document.getElementById('Section1').style.display='none';
+                             document.getElementById('Enrollment1').placeholder='Name of the Company';
+                             document.getElementById('Class1').placeholder='Designation in the company';
+                    }
+                    else{
+                     document.getElementById('Section1').style.display='block';
+                     document.getElementById('Enrollment1').placeholder='Enrollment Number';
+                     document.getElementById('Class1').placeholder='Class';
+                    }
+   
+                   }
+   
+   
+   
+               </script>
+               <div class="row py-4" style="display:block" id="company_name">
+               <div class="col-md-12">
+                 <div class="form-group">
+                     <input type="Text" name="Enrollment Number" id="Enrollment1" placeholder="Enrollment Number" class="form-control" required=false><br>
+                     <input type="Text" name="Class" id="Class1" placeholder="Class" class="form-control" required=false ><br>
+                     <input type="Text" name="Section" id="Section1" placeholder="Section" class="form-control" style="display:block" required=false>
+               </div>
+   
+             </div>
+   
+             <script>
+               var expanded = false;
+   
+               function showCheckboxes() {
+                 var checkboxes = document.getElementById("checkboxes");
+                 if (!expanded) {
+                   checkboxes.style.display = "block";
+                   expanded = true;
+                 } else {
+                   checkboxes.style.display = "none";
+                   expanded = false;
+                 }
+               }
+             </script>
+             <div class="row py-4">
+               <div class="col-md-6">
+                 <div class="form-group">
+                     <input type="number" name="contact" id="telephone" required placeholder="Contact Number" class="form-control">
+                   </div>
+               </div>
+               <div class="col-md-6">
+                   <div class="form-group">
+                     <input type="email" name="email" id="email" required placeholder="Email" class="form-control">
+                   </div>
+               </div>
+             </div>
+   
+             <div class="row py-4">
+               <div class="col-md-12">
+                 <div class="form-group">
+                     <textarea name="Comment" id="message" required="" placeholder="Enquiry" class="form-control" class="py-3" rows="3"></textarea>
+                 </div>
+               </div>
+             </div>
+   
+             <div class="row py-4">
+               <div class="col-md-12">
+                 <div class="form-group">
+                      <span class="policy">* Your personal details are safe with us. For more info, read our privacy policy.</span>
+                 </div>
+               </div>
+             </div>
+   
+              <div class="row">
+               <div class="col-md-12 text-center">
+                 <button type="submit" class="btn">Submit</button>
+               </div>
+             </div>
+   
+           </form>
+          </div>
         </div>
-  
-              <section class="pb-5 pt-2 connect">
-                <div class="container py-5">
-                  <div class="row text-center pt-3 pb-3">
-                    <div class="col-md-12">
-                      <h2 class="head">EDC ACROPOLIS</h2>
-                      <p class="subhead">To discuss your projects with us in confidence, please use the form below to get in touch.</p>
-                    </div>
-                  </div>
-
-                  <div class="row">
-                    <div class="col-xl-6  pb-5">
-                      <form action="https://formsubmit.co/connect@creativefuel.io" method="POST" accept-charset="utf-8">
-                          <input type="hidden" name="_captcha" value="false">
-                            <input type="hidden" name="_template" value="table">
-                          <input type="hidden" name="_next" value="https://creativefuel.io/thankyou.html">
-
-                        <div class="row py-4">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="text" name="name" id="name" required placeholder="Full Name" class="form-control">
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                  <select name="type" id="type" class="form-control" style="background-color:white" onchange="company_field(this.value)">
-                                      <option value="ACROPOLIAN">ACROPOLIAN</option>
-                                      <option value="NON-ACROPOLIAN">NON-ACROPOLIAN</option>
-                                  </select>
-
-                              </div>
-                          </div>
-                        </div>
-
-                          <script>
-                              function company_field(val){
-                                  
-
-                               if(val==="NON-ACROPOLIAN"){
-                                                                       
-                                   
-                            
-                                        document.getElementById('Section1').style.display='none';
-                                        document.getElementById('Enrollment1').placeholder='Name of the Company';
-                                        document.getElementById('Class1').placeholder='Designation in the company';
-                               }
-                               else{
-                                document.getElementById('Section1').style.display='block';
-                                document.getElementById('Enrollment1').placeholder='Enrollment Number';
-                                document.getElementById('Class1').placeholder='Class';
-                               }
-
-                              }
-
-
-
-                          </script>
-                          <div class="row py-4" style="display:block" id="company_name">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                                <input type="Text" name="Enrollment Number" id="Enrollment1" placeholder="Enrollment Number" class="form-control" required=false><br>
-                                <input type="Text" name="Class" id="Class1" placeholder="Class" class="form-control" required=false ><br>
-                                <input type="Text" name="Section" id="Section1" placeholder="Section" class="form-control" style="display:block" required=false>
-                          </div>
-
-                        </div>
-
-                        <script>
-                          var expanded = false;
-
-                          function showCheckboxes() {
-                            var checkboxes = document.getElementById("checkboxes");
-                            if (!expanded) {
-                              checkboxes.style.display = "block";
-                              expanded = true;
-                            } else {
-                              checkboxes.style.display = "none";
-                              expanded = false;
-                            }
-                          }
-                        </script>
-                        <div class="row py-4">
-                          <div class="col-md-6">
-                            <div class="form-group">
-                                <input type="number" name="contact" id="telephone" required placeholder="Contact Number" class="form-control">
-                              </div>
-                          </div>
-                          <div class="col-md-6">
-                              <div class="form-group">
-                                <input type="email" name="email" id="email" required placeholder="Email" class="form-control">
-                              </div>
-                          </div>
-                        </div>
-
-                        <div class="row py-4">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                                <textarea name="Comment" id="message" required="" placeholder="Enquiry" class="form-control" class="py-3" rows="3"></textarea>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="row py-4">
-                          <div class="col-md-12">
-                            <div class="form-group">
-                                 <span class="policy">* Your personal details are safe with us. For more info, read our privacy policy.</span>
-                            </div>
-                          </div>
-                        </div>
-
-                         <div class="row">
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="btn">Submit</button>
-                          </div>
-                        </div>
-
-                      </form>
-                    </div>
-                  </div>
-                </div>
               </section>
 
            
